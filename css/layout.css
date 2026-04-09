@@ -1,0 +1,13 @@
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(3, 1fr); }
+}
+.section__title {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2rem;
+}

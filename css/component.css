@@ -1,0 +1,48 @@
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+.btn--primary { background: var(--primary); color: white; }
+.btn--secondary { background: var(--secondary); color: white; }
+
+.form-control {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.features__card, .plan-card, .testimonial-card {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.plan-card--highlighted {
+  border: 2px solid var(--primary);
+  background: #e9f3ff;
+}
+
+.faq__item { margin: 1rem 0; }
+.faq__question {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  background: var(--light);
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+.faq__answer {
+  display: none;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+.faq__question.active { background: var(--primary); color: white; }
+
+.fade-in { opacity: 0; animation: fadeIn 1.5s forwards; }
+@keyframes fadeIn { to { opacity: 1; } }
+.hover-card { transition: transform 0.3s, box-shadow 0.3s; }
+.hover-card:hover { transform: translateY(-5px); box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
